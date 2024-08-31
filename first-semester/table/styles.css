@@ -1,0 +1,115 @@
+:root {
+  --font-family: "Segoe UI", Arial, sans-serif;
+  --line-height: 1.6;
+  --background-color: #35424a;
+  --header-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+header {
+  background: var(--background-color);
+  color: var(--header-color);
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: var(--header-color);
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+section {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--header-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  min-height: 100dvh;
+  overflow: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.ms-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.ms-table th,
+.ms-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.ms-table th {
+  background-color: #f3f3f3;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ms-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.ms-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 767px) {
+  section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ms-table th,
+  .ms-table td {
+    display: block;
+    width: 100%;
+  }
+  .ms-table tr {
+    margin-bottom: 15px;
+    display: block;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: var(--background-color);
+  color: var(--header-color);
+  position: sticky;
+  bottom: 0;
+}
+
+footer a {
+  color: var(--header-color);
+  text-decoration: none;
+}

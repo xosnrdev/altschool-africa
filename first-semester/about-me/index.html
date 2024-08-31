@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../home">Home</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <picture class="profile-picture">
+          <source srcset="./assets/me.png" media="(min-width: 1200px)" />
+          <source srcset="./assets/me.png" media="(min-width: 768px)" />
+          <source srcset="./assets/me.png" media="(max-width: 767px)" />
+          <img
+            src="./assets/me.png"
+            alt="A picture of me"
+            width="20%"
+            height="20%"
+            style="
+              border-radius: 100%;
+              height: auto;
+              margin: 0 auto;
+              display: block;
+            "
+          />
+        </picture>
+        <h1>About Me</h1>
+        <article>
+          <h2>My Workspace</h2>
+          <picture>
+            <source
+              srcset="./assets/workspace.jpeg"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="./assets/workspace-medium.jpg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./assets/workspace-mini.jpg"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./assets/workspace.jpeg"
+              alt="A picture of my workspace"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </article>
+        <!-- <video controls class="media">
+          <source src="./assets/side-project.gif" type="video/mp4" />
+          <source src="videos/intro.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+        <audio controls class="media">
+          <source src="audio/intro.mp3" type="audio/mpeg" />
+          <source src="audio/intro.ogg" type="audio/ogg" />
+          Your browser does not support the audio element.
+        </audio> -->
+        <article>
+          <h2>My Recent YouTube</h2>
+          <iframe
+            width="100%"
+            height="500"
+            src="https://www.youtube.com/embed/Mcij3_dh5Ao"
+            title="Building a Compiler - Simple Operator Precedence with Parser Combinators | Live Rust Programming"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </article>
+        <article>
+          <h2 class="section-title">My Hobbies</h2>
+          <p>
+            I enjoy music, reading, IoT, Artificial Intelligence and playing
+            video games. I also love to travel and explore new places.
+          </p>
+        </article>
+
+        <article>
+          <h2 class="section-title">My Side Project</h2>
+          <p>
+            I am currently working on a web application called Carai. It serves
+            as a code playground where users can write, test, and share their
+            code across multiple programming languages. The goal is to create an
+            inclusive platform that fosters collaboration among developers,
+            enabling them to learn from one another and grow their skills in a
+            supportive environment. With Carai, I aim to simplify the coding
+            process and make it accessible to everyone, regardless of their
+            experience level.
+          </p>
+        </article>
+        <img
+          src="./assets/side-project.gif"
+          alt="A picture of my side project"
+          width="100%"
+          height="100%"
+        />
+        <p>
+          See
+          <a href="https://codespacex.com">https://codespacex.com</a>
+        </p>
+
+        <article>
+          <h2 class="section-title">Connect with Me</h2>
+          <p>Feel free to reach out or connect with me on social media:</p>
+          <ul class="social-links">
+            <li>
+              <a href="https://twitter.com/xosnrdev" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/snrjsdev" target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/xosnrdev" target="_blank">GitHub</a>
+            </li>
+            <li><a href="mailto:successxodev@gmail.com">Email</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <a href="../table">Go Back</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AltSchool Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../table/">Table</a>
+      </nav>
+    </header>
+    <main class="container">
+      <section>
+        <p class="sign-in">
+          <strong>
+            Already an AltSchooler?
+            <a href="#" class="sign-in-link"> Sign In!</a>
+          </strong>
+        </p>
+        <div class="signup-heading">
+          <h1>Signup</h1>
+          <p>Take the next steps to apply at AltSchool Africa</p>
+        </div>
+
+        <form action="#" autocomplete="on" class="signup-form" method="post">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+              autocomplete="given-name"
+              placeholder="Enter first name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+              autocomplete="family-name"
+              placeholder="Enter last name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              required
+              autocomplete="bday"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              placeholder="Enter email address"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              autocomplete="tel"
+              placeholder="08154387000"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country</label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              list="countryList"
+              placeholder="Select your country"
+              required
+              autocomplete="address-level1"
+            />
+
+            <datalist id="countryList">
+              <option value="Afghanistan"></option>
+              <option value="Albania"></option>
+              <option value="Algeria"></option>
+              <option value="Andorra"></option>
+              <option value="Angola"></option>
+            </datalist>
+          </div>
+
+          <div class="form-group">
+            <label for="residence">State/City of Residence</label>
+            <input
+              type="text"
+              id="residence"
+              name="residence"
+              placeholder="Enter your state of residence"
+              required
+              autocomplete="address-level2"
+            />
+          </div>
+
+          <div class="form-group referral">
+            <label for="referral">How did you hear about us?</label>
+            <input
+              type="text"
+              id="referral"
+              name="referral"
+              list="channelList"
+              placeholder="Select channel"
+              autocomplete="off"
+            />
+            <datalist id="channelList">
+              <option value="LinkedIn"></option>
+              <option value="YouTube"></option>
+              <option value="Friend"></option>
+              <option value="WhatsApp"></option>
+              <option value="Instagram"></option>
+              <option value="Billboard"></option>
+              <option value="Sales officer"></option>
+              <option value="Other"></option>
+            </datalist>
+          </div>
+
+          <div class="form-group password">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              autocomplete="new-password"
+              placeholder="Enter password"
+            />
+          </div>
+
+          <div class="form-group password">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+              autocomplete="new-password"
+              placeholder="Enter password again"
+            />
+          </div>
+
+          <div class="">
+            <label for="terms"
+              >By clicking submit, I agree to
+              <a
+                href="#"
+                style="text-decoration: none; color: rgb(106, 111, 245)"
+                >Terms of Use</a
+              >
+              and acknowledge that I have read the
+              <a
+                href="#"
+                style="text-decoration: none; color: rgb(106, 111, 245)"
+                >Privacy Policy</a
+              >.</label
+            >
+          </div>
+
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <a href="../about-me">Go Back</a>
+    </footer>
+  </body>
+</html>
